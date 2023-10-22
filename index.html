@@ -5,25 +5,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Elhadi | Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e245a09227.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Header section -->
     <div id="header">
         <div class="container">
             <nav>
                 <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
-                <h1>Hi, I'm Ahmed from Sudan</h1>
+                <h1>Hi, I'm <span>Ahmed</span><br>from Sudan</h1>
             </div>
         </div>
     </div>
+    <!-- the end of header section -->
+    <!-- ----------------about-------------- --->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-titile">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, 
+                        repellat blanditiis reiciendis non repellendus ut
+                         aspernatur vel id, assumenda necessitatibus 
+                        architecto, consequatur eveniet accusamus quisquam
+                         temporibus ipsum ea minus ipsam.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents activ-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web App interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>App Development</span><br>App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX designer at Amed's Web</li>
+                            <li><span>2019 - 2021</span><br>Application Technical Support Engineer at Du Telecom company</li>
+                            <li><span>2017 - 2019</span><br>Team Lead at ICTcanavas</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Oracle Java Professional Training</li>
+                            <li><span>2015</span><br>Master's Degree in Computer Enginnering</li>
+                            <li><span>2007</span><br>Bachelor's Degree in Computer Enginnering</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-titile">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Website<hr>Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita 
+                        ipsam, tempora qui consequuntur aperiam, ea eligendi
+                        blanditiis eveniet nesciunt voluptates, impedit nobis fugit corporis
+                        perferendis? Quos maiores numquam a.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-buromobelexperte"></i>
+                    <h2>UI/UX<hr>Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita 
+                        ipsam, tempora qui consequuntur aperiam, ea eligendi
+                        blanditiis eveniet nesciunt voluptates, impedit nobis fugit corporis
+                        perferendis? Quos maiores numquam a.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>App<hr>Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos expedita 
+                        ipsam, tempora qui consequuntur aperiam, ea eligendi
+                        blanditiis eveniet nesciunt voluptates, impedit nobis fugit corporis
+                        perferendis? Quos maiores numquam a.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-titile">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/WebDevPort/images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app is connecting you with youer beloved ones 
+                            while you doing you important daily work
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/WebDevPort/images/work-2.png">
+                    <div class="layer">
+                        <h3>Online Shopping Website</h3>
+                        <p>A website and aplatform for showing potential customers all the 
+                            goods that you offer
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/WebDevPort/images/work-3.png">
+                    <div class="layer">
+                        <h3>Travel Guid Website</h3>
+                        <p>the vistors can book and search for their desired next trip 
+                            guid
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--- Contact ----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titile">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> ahmed.e_ali@outlook.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +249905674420</p>
+                    <div class="social-icos">
+                        <a href="https://www.facebook.com/ahmed.e.a.ali/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-stack-overflow"></i></a>
+                    </div>
+                    <a href="/WebDevPort/images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Ahmed. made by <i class="fa-solid fa-heart"></i> Amed's Web</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activ-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("activ-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3g4gGeBNW69-ILkcniG9HOjq17g0n0mD7AZeJmpty-OpjYtBo1VEa22lkaw_RRFeY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfuly"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
